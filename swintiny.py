@@ -31,8 +31,8 @@ print("input image: ", image_path)
 ckpt = torch.load(model_path, map_location="cpu")
 ckpt_config = ckpt["config"]
 
-ckpt_config['tokenizer']['cache_dir'] = "/home/richardlin/home/porter/cxr-clip/cache/tokenizer"
-ckpt_config['model']['text_encoder']['cache_dir'] = "/home/richardlin/home/porter/cxr-clip/cache/text_encoder"
+ckpt_config['tokenizer']['cache_dir'] = "/Users/yichingtsai/Python-folder/cxrclip_swintiny/cache/tokenizer"
+ckpt_config['model']['text_encoder']['cache_dir'] = "/Users/yichingtsai/Python-folder/cxrclip_swintiny/cache/text_encoder"
 
 print(ckpt_config)
 
